@@ -8,7 +8,7 @@ from app.core.config import settings
 if not firebase_admin._apps:
     if settings.FIREBASE_CREDENTIALS_JSON:
         # Production (Render) : credentials passés en variable d'environnement
-        cred_dict = json.loads(settings.FIREBASE_CREDENTIALS)
+        cred_dict = json.loads(settings.FIREBASE_CREDENTIALS_JSON)
         cred = credentials.Certificate(cred_dict)
     else:
         # Développement local : credentials depuis un fichier
