@@ -9,7 +9,7 @@ class Settings:
 
     # Credentials Firebase : fichier en local, JSON en variable d'env sur Render
     FIREBASE_CREDENTIALS_PATH: str = os.getenv("FIREBASE_CREDENTIALS_PATH", "firebase-credentials.json")
-    FIREBASE_CREDENTIALS_JSON: str = os.getenv("FIREBASE_CREDENTIALS_JSON", "")
+    FIREBASE_CREDENTIALS_JSON: str = os.getenv("FIREBASE_CREDENTIALS", "")
 
     # JWT
     SECRET_KEY: str = os.getenv("SECRET_KEY", "super-secret-key-default")
